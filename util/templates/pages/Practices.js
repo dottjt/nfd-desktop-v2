@@ -21,7 +21,7 @@ const Practices = (practice, practices) => {
         </div>
       </div>
 
-      <%= partial "links/patreon.html", assigns %>
+      <PatreonLink/>
 
       <div className="single__wrapper">
         <h3 className="popular__latest__options__title">Practices</h3>

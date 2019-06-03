@@ -22,7 +22,7 @@ const Podcasts = (article, articles) => {
       </div>
 
       <div className="links__mobile__margin">
-        <%= partial "links/patreon.html", assigns %>
+        <PatreonLink/>
       </div>
 
       <div className="single__wrapper">

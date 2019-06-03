@@ -21,7 +21,7 @@ const Meditations = (article, articles) => {
         </div>
       </div>
 
-      <%= partial "links/patreon.html", assigns %>
+      <PatreonLink/>
 
       <div className="single__wrapper">
         <h1 style="margin-bottom: 3rem;">Guided Meditation List</h1>

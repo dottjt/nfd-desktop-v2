@@ -20,7 +20,7 @@ const Articles = ({ article, articles }) => {
         </div>
       </div>
 
-      <%= partial "links/patreon.html", assigns %>
+      <PatreonLink/>
 
       <div className="single__wrapper">
         <h3 className="popular__latest__options__title">Articles</h3>

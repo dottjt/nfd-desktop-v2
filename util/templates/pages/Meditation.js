@@ -5,28 +5,29 @@ const {
   PatreonLink
 } = require('../component/componentTemplates');
 
-const Meditation = (article, articles) => {
+const Meditation = (item, items) => {
   return (
     <div>
       <div className="single__wrapper practices__wrapper">
-        <h1 className="single__title"><%= @item["title"] %> <img src="/images/logo.png" className="logo__square" alt=""/></h1>
+        <h1 className="single__title">{item.title} <img src="/images/logo.png" className="logo__square" alt=""/></h1>
         <div style="margin-top: 1.4rem;">
-          <%= raw @item["podcast_player"] %>
+          {/* TODO: React Library in order to play audio. */}
+          {raw @item.podcast_player}
         </div>
 
-        <h3 style="margin-bottom: 2rem;"><%= raw @item["content"] %></h3>
+        <h3 style="margin-bottom: 2rem;"><%= raw @item.content}</h3>
         <div className="podcast__item__bottom">
-          <a className="link articles__link" href='<%= @item["podcast_url"] %>'>episode link</a>
+          <a className="link articles__link" href='{item.podcast_url}'>episode link</a>
         </div>
       </div>
 
       <div className="single__wrapper">
-        <%= partial "share_buttons.html", %{permalink: @item["permalink"] } %>
-        <%= partial "next_prev_buttons.html", %{nextArticle: @nextArticle, previousArticle: @previousArticle } %>
+        <ShareButtons permalink={permalink}/>
+        {/* <%= partial "next_prev_buttons.html", %{nextArticle: @nextArticle, previousArticle: @previousArticle } %> */}
       </div>
 
 
-      <%= partial "links/patreon.html", assigns %>
+      <PatreonLink/>
 
       <%= partial "reddit_question_banner.html", assigns %>
 
