@@ -1,4 +1,8 @@
 {
   "HOME": "/",
-  "COUNTER": "/counter"
+  "COUNTER": "/counter",
+  "ARTICLES": "/articles",
+  "PRACTICES": "/practices",
+  "MEDITATIONS": "/meditations",
+  "PODCASTS": "/podcasts"
 }

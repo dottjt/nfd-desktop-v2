@@ -6,7 +6,7 @@
   position: absolute;
   top: 30%;
   left: 45%;
-  font-size: 10rem;
+  font-size: 10rem,
   font-weight: bold;
   letter-spacing: -0.025em;
 }
@@ -19,7 +19,7 @@
 }
 
 .btn {
-  font-size: 1.6rem;
+  font-size: 1.6rem,
   font-weight: bold;
   background-color: #fff;
   border-radius: 50%;

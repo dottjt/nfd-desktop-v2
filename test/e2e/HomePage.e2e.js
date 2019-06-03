@@ -4,7 +4,7 @@ import { getPageUrl } from './helpers';
 
 const getPageTitle = ClientFunction(() => document.title);
 const counterSelector = Selector('[data-tid="counter"]');
-const buttonsSelector = Selector('[data-tclass="btn"]');
+const buttonsSelector = Selector('[data-tclassName="btn"]');
 const clickToCounterLink = t =>
   t.click(Selector('a').withExactText('to Counter'));
 const incrementButton = buttonsSelector.nth(0);
